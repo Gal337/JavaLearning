@@ -1,3 +1,5 @@
+// If one number is declared as double the operation will return double result
+
 public class Debugging {
 
     public static void main(String[] args) {
