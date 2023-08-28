@@ -6,7 +6,7 @@
 
 // TASK 4: Replace each placeholder with a variable.
 
-package Section_TWO;
+
 
 public class Workbook_2_3 {
     

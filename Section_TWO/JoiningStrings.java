@@ -1,4 +1,4 @@
-package Section_TWO;
+
 
 public class JoiningStrings {
 
