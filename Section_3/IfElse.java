@@ -77,10 +77,10 @@ public class IfElse {
         String fourthWord = "goodbye";
         System.out.println("\nMe: Are the two words different");
         // Add if-else statement here
-        if (thirdWord.equals(fourthWord)) {
-            System.out.println("No, these two words are the same.");
+        if (!thirdWord.equals(fourthWord)) {
+            System.out.println("They are indeed different.");
         } else {
-            System.out.println("Yes, these two words are different.");
+            System.out.println("Yes, these two words are the same.");
         }
     }
 }
