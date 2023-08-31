@@ -20,12 +20,30 @@ public class SwitchStatements {
 
         // Section 2: User role
         int role = 2;
+        switch (role) {
+            case 1: System.out.println("You are an admin");
+                break;
+            case 2: System.out.println("You are an editor");
+                break;
+            case 3: System.out.println("You are a user");
+                break;
+            default: System.out.println("Please contact HR");
+                break;
+        }
         // Determine user access level based on the role (e.g., 1: admin, 2: editor, 3: user)
         // Decide whether to use if-else or switch
 
         // Section 3: Temperature and humidity
         int temperature = 75;
         int humidity = 65;
+
+        if (temperature >= 80 && humidity >= 60) {
+            System.out.println("It's too hot and humid.\n");
+        } else if (temperature >= 80) {
+            System.out.println("It's too hot.\n");
+        } else if (temperature <= 60 && humidity >= 60) {
+            System.out.println("It's too cold and humid.\n");
+        }
         // Determine the comfort level based on both temperature and humidity (e.g., too hot, too cold, comfortable)
         // Decide whether to use if-else or switch
 
