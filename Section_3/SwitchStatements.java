@@ -43,6 +43,10 @@ public class SwitchStatements {
             System.out.println("It's too hot.\n");
         } else if (temperature <= 60 && humidity >= 60) {
             System.out.println("It's too cold and humid.\n");
+        } else if (temperature <= 60) {
+            System.out.println("It's too cold.\n");
+        } else {
+            System.out.println("It's comfortable.\n");
         }
         // Determine the comfort level based on both temperature and humidity (e.g., too hot, too cold, comfortable)
         // Decide whether to use if-else or switch
