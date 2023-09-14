@@ -12,7 +12,8 @@ public class Parameters {
     // double length = first argument, double width = second argument from () inside main function
     public static void calculateArea(double length, double width) {
 
-            System.out.println("Area: " + length * width);
+            double area = length * width;
+            System.out.println("Area: " + area);
 
         }
     
