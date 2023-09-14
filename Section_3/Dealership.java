@@ -51,6 +51,7 @@ public class Dealership {
                 break;
         }
 
+        scan.close();
 
         }
 }
