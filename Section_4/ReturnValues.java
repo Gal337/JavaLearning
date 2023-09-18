@@ -7,12 +7,14 @@ public class ReturnValues {
         double area2 = calculateArea(1.6, 2.4);
         double area3 = calculateArea(2.6, 4.3);
 
+        //calculateArea(-5, 2.6);
+
+
         String englishExplain = explainArea("English");
         String frenchExplain = explainArea("French");
         String spanishExplain = explainArea("Spanish");
         String italianExplain = explainArea("Italian");
 
-        System.out.println(englishExplain);
         System.out.println("Area 1: " + area1 + "\nArea 2: " + area2 + "\nArea 3: " + area3);
 
     }
