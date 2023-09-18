@@ -47,4 +47,8 @@ public class ReturnValues {
 
     }
 
+    public static void printArea(double length, double width, double area) {
+        System.out.println("A rectangle with a length of " + length + " and a width of " + width + " has an area of " + area);
+    }
+
 }
