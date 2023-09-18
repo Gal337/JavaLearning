@@ -4,18 +4,13 @@ public class ReturnValues {
         
         // Values in () are called arguments, which are then passed to function
         double area1 = calculateArea(2.3, 3.6);
-        double area2 = calculateArea(1.6, 2.4);
-        double area3 = calculateArea(2.6, 4.3);
+        
+        printArea(2.3, 3.6, area1);
 
-        //calculateArea(-5, 2.6);
+        String englishExplanation = explainArea("English");
+        System.out.println(englishExplanation);
 
-
-        String englishExplain = explainArea("English");
-        String frenchExplain = explainArea("French");
-        String spanishExplain = explainArea("Spanish");
-        String italianExplain = explainArea("Italian");
-
-        System.out.println("Area 1: " + area1 + "\nArea 2: " + area2 + "\nArea 3: " + area3);
+        System.out.println("Area 1: " + area1);
 
     }
 
