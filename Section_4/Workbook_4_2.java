@@ -27,7 +27,7 @@ public class Workbook_4_2 {
 
         System.out.println("Waiter: I hope you enjoyed your meal!");
         
-        tipTheWaiter(53.50);
+        tipTheWaiter(bill);
 
     }
 
