@@ -10,7 +10,7 @@ public class BuiltInFunctions {
          */
         String message = "Hello, World!";
         // Write your code here
-        
+        System.out.println(message);
 
         /**
          * Scenario 2
@@ -20,6 +20,8 @@ public class BuiltInFunctions {
          */
         String example = "Java";
         // Write your code here
+        int length = example.length();
+        System.out.println(length);
 
 
         /**
@@ -30,7 +32,9 @@ public class BuiltInFunctions {
          */
         String upperCase = "JAVA";
         // Write your code here
-
+        //System.out.println(upperCase.toLowerCase());
+        String lowerCase = upperCase.toLowerCase();
+        System.out.println(lowerCase);
 
         /**
          * Scenario 4
@@ -41,7 +45,8 @@ public class BuiltInFunctions {
          */
         String programming = "Java programming";
         // Write your code here
-
+        boolean startWithPrefix = programming.startsWith("Java");
+        System.out.println("Does it start with the prefix? " + startWithPrefix);
 
 
         /**
@@ -54,6 +59,8 @@ public class BuiltInFunctions {
          */
         String original = "Java is fun!";
         // Write your code here
+        String updatedString = original.replace('a', 'o');
+        System.out.println(updatedString);
 
         
         /**
@@ -66,7 +73,8 @@ public class BuiltInFunctions {
         
         double number = 9;
         // Write your code here
-
+        double square = Math.sqrt(number);
+        System.out.println(square);
 
         /**
          * Scenario 7
@@ -79,6 +87,8 @@ public class BuiltInFunctions {
         double base = 2;
         double exponent = 3;
         // Write your code here
+        double power = Math.pow(base, exponent);
+        System.out.println(power);
 
 
         /**
@@ -88,6 +98,8 @@ public class BuiltInFunctions {
          * @return randomNumber (double)
          */
         // Write your code here
+        double random = Math.random();
+        System.out.println(random);
 
 
 
@@ -102,7 +114,8 @@ public class BuiltInFunctions {
         int number1 = 5;
         int number2 = 10;
         // Write your code here
-
+        int maxNumber = Math.max(number1, number2);
+        System.out.println(maxNumber);
 
     }
 }
