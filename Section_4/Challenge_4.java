@@ -55,7 +55,9 @@ So, you're left with the else block. If the user doesn't enter "yes", print: 
    -- print: Darn, some other time...
   */
 
-  /**
+import java.util.Scanner;
+
+/**
    * Task 3: Generate a random choice
 
 
@@ -111,8 +113,24 @@ public class Challenge_4 {
     
     public static void main(String[] args) {
         
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Let's play Rock Paper Scissors.");
+        System.out.println("\nWhen I say 'shoot', choose: rock, paper, or scissors.");
+        System.out.println("\nAre you ready? Write 'yes' if you are.");
 
+        String decision = scan.nextLine();
+
+        if (decision.equals("yes")) {
+            System.out.println("Great!");
+            System.out.println("\nrock - paper - scissors, shoot!");
+            String choice = scan.nextLine();
+        } else {
+            System.out.println("\nDarn, some other time...!");
+        }
     }
 
+    public static String computerChoice (String choice) {
+        
+    }
 }
