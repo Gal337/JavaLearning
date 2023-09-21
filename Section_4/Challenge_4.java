@@ -122,15 +122,26 @@ public class Challenge_4 {
         String decision = scan.nextLine();
 
         if (decision.equals("yes")) {
-            System.out.println("Great!");
+            System.out.println("\nGreat!");
             System.out.println("\nrock - paper - scissors, shoot!");
             String choice = scan.nextLine();
+            
+            computerChoice();
         } else {
             System.out.println("\nDarn, some other time...!");
         }
     }
 
-    public static String computerChoice (String choice) {
+    public static int computerChoice() {
+        double randomNumber = Math.random() * 2;
         
+        if (randomNumber == 0) {
+            System.out.println("rock");
+        } else if (randomNumber == 1) {
+            System.out.println("paper");
+        } else if (randomNumber == 2) {
+            System.out.println("scissors");
+        }
+        return (int)randomNumber;
     }
 }
