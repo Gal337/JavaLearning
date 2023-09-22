@@ -119,29 +119,30 @@ public class Challenge_4 {
         System.out.println("\nWhen I say 'shoot', choose: rock, paper, or scissors.");
         System.out.println("\nAre you ready? Write 'yes' if you are.");
 
-        String decision = scan.nextLine();
+        String response = scan.nextLine();
 
-        if (decision.equals("yes")) {
+        if (response.equals("yes")) {
             System.out.println("\nGreat!");
             System.out.println("\nrock - paper - scissors, shoot!");
-            String choice = scan.nextLine();
+            String userChoice = scan.nextLine();
+            String computerChoice = computerChoice();
             
-            computerChoice();
         } else {
             System.out.println("\nDarn, some other time...!");
         }
     }
 
-    public static int computerChoice() {
-        double randomNumber = Math.random() * 2;
+    public static String computerChoice() {
+        int randomNumber = (int)(Math.random() * 3);
         
         if (randomNumber == 0) {
-            System.out.println("rock");
+            return "rock";
         } else if (randomNumber == 1) {
-            System.out.println("paper");
+            return "paper";
         } else if (randomNumber == 2) {
-            System.out.println("scissors");
+            return "scissors";
+        } else {
+            return "Error 404";
         }
-        return (int)randomNumber;
     }
 }
