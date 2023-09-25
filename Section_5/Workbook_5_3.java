@@ -13,7 +13,6 @@ public class Workbook_5_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-
         System.out.print("Hi Timmy! Choose a number to count to: ");
         
         int number = scan.nextInt();
@@ -24,7 +23,6 @@ public class Workbook_5_3 {
             System.out.print(i + " ");
 
         }
-
 
     }
     
