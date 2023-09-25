@@ -125,7 +125,13 @@ public class Challenge_4 {
             System.out.println("\nGreat!");
             System.out.println("\nrock - paper - scissors, shoot!");
             String userChoice = scan.nextLine();
-            String computerChoice = computerChoice();
+            String compChoice = computerChoice();
+
+            System.out.println("\nYou chose: " + userChoice);
+            System.out.println("\nThe computer chose: " + compChoice);
+
+            String finalResult = result(userChoice, compChoice);
+            printResult(userChoice, compChoice, finalResult);
             
         } else {
             System.out.println("\nDarn, some other time...!");
@@ -144,5 +150,36 @@ public class Challenge_4 {
         } else {
             return "Error 404";
         }
+    }
+
+    public static String result(String yourChoice, String computerChoice) {
+      String result = "";
+
+      if (yourChoice.equals("rock") && computerChoice.equals("scissors")) {
+         return "You Win!";
+      } else if (yourChoice.equals("paper") && computerChoice.equals("rock")) {
+         return "You Win!";
+      } else if (yourChoice.equals("scissors") && computerChoice.equals("paper")) {
+         return "You Win!";
+      } else if (computerChoice.equals("rock") && yourChoice.equals("scissors")) {
+         return "You Lose!";
+      } else if (computerChoice.equals("paper") && yourChoice.equals("rock")) {
+         return "You Lose!";
+      } else if (computerChoice.equals("scissors") && yourChoice.equals("paper")) {
+         return "You Lose!";
+      } else if (yourChoice.equals(computerChoice)) {
+         return "It's a tie!";
+      } else {
+         System.out.println("Invalid choice!");
+         System.exit(0);
+      }
+
+      return result;
+    }
+
+    public static void printResult(String yourChoice, String computerChoice, String result) {
+      System.out.println("\nYou chose: " + yourChoice);
+      System.out.println("Computer chose: " + computerChoice);
+      System.out.println(result);
     }
 }
