@@ -24,6 +24,7 @@ public class Workbook_5_3 {
 
         }
 
+        scan.close();
     }
     
 }
