@@ -136,6 +136,8 @@ public class Challenge_4 {
         } else {
             System.out.println("\nDarn, some other time...!");
         }
+
+        scan.close();
     }
 
     public static String computerChoice() {

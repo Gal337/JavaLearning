@@ -100,7 +100,7 @@ public class LogicalOperators {
 
         // if move is NOT hit or stay: System.out.println("Please choose a valid move");
         // otherwise: System.out.println("You win 10 bucks!");
-        if (notHitOrStay || move.equals("stay"))) {
+        if (notHitOrStay) {
             System.out.println("Please choose a valid move");
         } else {
             System.out.println("You win 10 bucks!");
