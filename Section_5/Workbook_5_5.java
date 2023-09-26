@@ -9,6 +9,23 @@
  * 1. Pick a number to count by: 3
  * 2. Pick a number to start counting from: 6
  * 3. Pick a number to count to: 66
+ * 
+ * Task 1 - Get integers from the user.
+   You'll ask the user three questions:
+   1. Pick a number to count by: <number>
+   2. Pick a number to start counting from: <number>
+   3. Pick a number to count to: <number>
+   The user will submit his answer BESIDE each question:
+ * 
+ * 
+ * Task 2 - Write a loop
+   Make a for loop that:
+   starts from the second number.
+   stops at the third number.
+   counts in steps of the first.
+   Then, print your count in ONE line.
+ * 
+ * 
  */
 
 public class Workbook_5_5 {
