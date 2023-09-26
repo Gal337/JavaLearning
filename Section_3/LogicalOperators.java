@@ -68,7 +68,7 @@ public class LogicalOperators {
 
         String option = "cash";
 
-        boolean cashOrCredit = option.equals("cash") || option.equals("credit");
+        //boolean cashOrCredit = option.equals("cash") || option.equals("credit");
         boolean notCashOrCredit = !(option.equals("cash") || option.equals("credit"));
 
         // if payment option is NOT cash or credit: System.out.println("Please choose another payment option");
@@ -82,7 +82,7 @@ public class LogicalOperators {
 
         char letter = 'A';
 
-        boolean isVowel = (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U');
+        //boolean isVowel = (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U');
         boolean notVowel = !((letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U'));
         
         // if letter is NOT a vowel: System.out.println("The letter " + letter + " is a consonant");
@@ -95,7 +95,7 @@ public class LogicalOperators {
 
 
         String move = "stay";
-        boolean isHitOrStay = move.equals("hit") || move.equals("stay");
+        //boolean isHitOrStay = move.equals("hit") || move.equals("stay");
         boolean notHitOrStay = !(move.equals("hit") || move.equals("stay"));
 
         // if move is NOT hit or stay: System.out.println("Please choose a valid move");
