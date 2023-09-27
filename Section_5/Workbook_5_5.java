@@ -52,6 +52,8 @@ public class Workbook_5_5 {
           System.out.print(i + " ");
         }
 
+        scan.close();
+
     }
 
 }
