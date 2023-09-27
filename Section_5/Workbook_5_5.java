@@ -55,11 +55,3 @@ public class Workbook_5_5 {
     }
 
 }
-
-
-/* Task 2 - Write a loop
-   Make a for loop that:
-   starts from the second number.
-   stops at the third number.
-   counts in steps of the first.
-   Then, print your count in ONE line. */
